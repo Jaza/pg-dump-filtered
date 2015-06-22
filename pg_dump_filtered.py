@@ -8,7 +8,12 @@ import sys
 import urlparse
 
 if len(sys.argv) < 3:
-    print('Must specify database_uri and world_id arguments, e.g. {0} "postgresql://pg_dump_test:pg_dump_test@localhost:5432/pg_dump_test" 1'.format(sys.argv[0]), file=sys.stderr)
+    print((
+            'Must specify database_uri and world_id arguments, e.g. '
+            '{0} "postgresql://pg_dump_test:pg_dump_test@'
+            'localhost:5432/pg_dump_test" 1')
+            .format(sys.argv[0]),
+        file=sys.stderr)
     sys.exit(1)
 
 # Grab DB credentials from first command-line argument.

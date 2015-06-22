@@ -30,4 +30,6 @@ To try out the test script, do the following:
 
 .. code:: bash
 
-    ./pg_dump_filtered.py "postgresql://pg_dump_test:pg_dump_test@localhost:5432/pg_dump_test" 2
+    ./pg_dump_filtered.py \
+    "postgresql://pg_dump_test:pg_dump_test@localhost:5432/pg_dump_test" 2 \
+    > ~/pg_dump_test_output.sql
