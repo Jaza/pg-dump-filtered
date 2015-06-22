@@ -1,11 +1,11 @@
 PG Dump Filtered
 ================
 
-Example Python script that outputs an SQL dump (as INSERT statements) of a set of related tables, filtered by the ID of the top-level table.
+Example Python script that outputs an SQL dump (as ``INSERT`` statements) of a set of related tables, filtered by the ID of the top-level table.
 
 With only a small amount of tweaking, this script should be able to produce a dump of virtually any relational data set, filtered by virtually any criteria that you might fancy.
 
-This script is for Postgres, whose `pg_dump` utility lacks any query-level filtering functionality. It could also be quite easily adapted to other DBMSes (e.g. MySQL, SQL Server, Oracle), although most of Postgres' competitors have a dump utility with at least some filtering capability.
+This script is for Postgres, whose ``pg_dump`` utility lacks any query-level filtering functionality. It could also be quite easily adapted to other DBMSes (e.g. MySQL, SQL Server, Oracle), although most of Postgres' competitors have a dump utility with at least some filtering capability.
 
 
 Instructions
