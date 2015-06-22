@@ -41,3 +41,10 @@ To try out the test script, do the following:
     ./pg_dump_filtered.py \
     "postgresql://pg_dump_test:pg_dump_test@localhost:5432/pg_dump_test" 2 \
     > ~/pg_dump_test_output.sql
+
+More info
+---------
+
+For a comprehensive guide of how to use this script, see this blog post:
+
+http://greenash.net.au/thoughts/2015/06/generating-a-postgres-db-dump-of-a-filtered-relational-set/
