@@ -17,7 +17,7 @@ To try out the test script, do the following:
 
 .. code:: sql
 
-    CREATE pg_dump_test;
+    CREATE DATABASE pg_dump_test;
     CREATE USER pg_dump_test WITH PASSWORD 'pg_dump_test';
     GRANT ALL PRIVILEGES ON DATABASE pg_dump_test TO pg_dump_test;
 
