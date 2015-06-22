@@ -5,6 +5,8 @@ Example Python script that outputs an SQL dump (as INSERT statements) of a set o
 
 With only a small amount of tweaking, this script should be able to produce a dump of virtually any relational data set, filtered by virtually any criteria that you might fancy.
 
+This script is for Postgres, whose `pg_dump` utility lacks any query-level filtering functionality. It could also be quite easily adapted to other DBMSes (e.g. MySQL, SQL Server, Oracle), although most of Postgres' competitors have a dump utility with at least some filtering capability.
+
 
 Instructions
 ------------
@@ -26,7 +28,13 @@ To try out the test script, do the following:
     PGPASSWORD=pg_dump_test psql -U pg_dump_test pg_dump_test < ./test_schema.sql
     PGPASSWORD=pg_dump_test psql -U pg_dump_test pg_dump_test < ./test_data.sql
 
-3.  Generate a DB dump for all data related to the top-level entity with ID "2", e.g:
+3.  Install Python dependencies (i.e. psycopg2):
+
+.. code:: bash
+
+    pip install -r requirements.txt
+
+4.  Generate a DB dump for all data related to the top-level entity with ID "2", e.g:
 
 .. code:: bash
 
